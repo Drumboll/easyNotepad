@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notepad</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--<style src="style.css">
+        /*body { 
+            font:normal normal 16px/1.4 arial;
+            background-color: darkgrey;
+        }
+        :focus {outline:0;}
+        div {
+            width:100%;
+            height:90%;
+            color:rgb(44, 42, 42);
+            margin:20px 0;
+        }
+        ul {
+            list-style:none;
+            padding:0;
+            margin:0;
+            display:inline-block;
+        }
+        ul li {
+            float:left;
+            padding:0 10px;
+            cursor:pointer;
+        }
+        */
+    </style> -->
+</head>
+<body>
+
+    <h1>easyNotepad</h1>
+
+    <div contenteditable id="texto"></div>
+
+    <ul>
+        <li><input type="button" id="btSave" value="Guardar Nota" /></li>
+    </ul>
+</body>
+
+<script src="script.js">
+
+/*
+    $(document).ready(function() {
+        $('div').focus();
+
+        $('#btSave').click(function() {
+
+            if ($('div').text() != '')
+                saveFile($('div').text());
+            else
+                alert('No notes to save');
+        });
+    });
+
+    // USING BLOB (BINARY LARGE OBJECT) TO SAVE THE TEXT.
+
+    function saveFile(Value) {
+
+        // CONVERT THE TEXT TO A BLOB.
+        var textToBLOB = new Blob([Value], { type: 'text/plain' });
+        var sFileName = 'myFile.txt';       // THE FILE IN WHICH THE CONTENTS WILL BE SAVED.
+
+        var newLink = document.createElement("a");
+        newLink.download = sFileName;
+
+        if (window.webkitURL != null) {
+            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+        }
+        else {
+            newLink.href = window.URL.createObjectURL(textToBLOB);
+            newLink.style.display = "none";
+            document.body.appendChild(newLink);
+        }
+
+        newLink.click();
+    }
+
+*/
+</script>
+
+</html>

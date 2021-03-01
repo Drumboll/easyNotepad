@@ -1,0 +1,29 @@
+body { 
+    font:normal normal 16px/1.4 arial;
+    background-color: darkgrey;
+}
+:focus {outline:0;}
+h1 {
+    font:lighter 50px;
+    font-family: cursive;
+    text-shadow: 2px 2px 5px slategray;
+    color: rgb(76, 123, 161);
+}
+#texto {
+    width:50%;
+    height:90%;
+    color:rgb(44, 42, 42);
+    margin:20px 0;
+    border: 1px solid rgb(60, 62, 85);
+}
+ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:inline-block;
+}
+ul li {
+    float:left;
+    padding:0 10px;
+    cursor:pointer;  
+}
